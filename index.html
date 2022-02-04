@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc__container">
+        <p>Tip Calculator</p>
+        <form class="form" action="#">
+          <label for="amount">Bill Amount</label>
+          <input type="text" id="amount" />
+          <label for="cover">Number Of Guests</label>
+          <input type="text" id="cover" />
+          <label for="service">Service Quality</label>
+          <select class="select" name="service" id="service">
+              <option disabled selected value="0">Choose...</option>
+              <option value="0.3">30% Good Service</option>
+              <option value="0.2">20% Normal service</option>
+              <option value="0.15">15% It was ok</option>
+              <option value="0.1">10% Bad</option>
+              <option value="0.05">5% Terible</option>
+          </select>
+          <button class="calulate">Calculate</button>
+          <h3></h3>
+      </div>
+    </div>
+  </body>
+</html>
